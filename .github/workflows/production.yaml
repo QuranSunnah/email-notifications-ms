@@ -9,7 +9,7 @@ jobs:
     uses: QuranSunnah/deployment-tools/.github/workflows/development.yaml@main
     with:
       ENVIRONMENT: production
-      TAG: dev-1
+      TAG: latest
     secrets:
       DOCKER_USERNAME: ${{ secrets.SEC_DOCKER_USERNAME }} 
       DOCKER_TOKEN: ${{ secrets.SEC_DOCKER_TOKEN }}
