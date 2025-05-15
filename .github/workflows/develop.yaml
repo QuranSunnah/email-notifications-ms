@@ -9,7 +9,7 @@ jobs:
   build:
     name: Docker Image Build Process
     environment: development
-    uses: QuranSunnah/deployment-tools/workflows/build/development.yaml
+    uses: QuranSunnah/deployment-tools/workflows/build/development.yaml@main
     with:
       ENVIRONMENT: development
       TAG: ${{ github.sha }}
