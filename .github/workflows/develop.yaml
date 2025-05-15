@@ -12,8 +12,8 @@ jobs:
       ENVIRONMENT: development
       TAG: dev-1
     secrets:
-      HOST: 127.0.0.1
-      USERNAME: ${{ secrets.USERNAME }}
+      HOST: stage-1
+      USERNAME: staging
    
 
     
