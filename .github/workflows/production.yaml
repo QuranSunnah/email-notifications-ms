@@ -11,8 +11,8 @@ jobs:
       ENVIRONMENT: production
       TAG: dev-1
     secrets:
-      HOST: stage-1
-      USERNAME: staging
+      DOCKER_USERNAME: ${{ secrets.ORG_SEC_DOCKER_USERNAME }}
+      DOCKER_TOKEN: ${{ secrets.ORG_SEC_DOCKER_TOKEN }}
    
 
     
