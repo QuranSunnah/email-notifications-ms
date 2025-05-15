@@ -1,6 +1,6 @@
 FROM nginx
 
 WORKDIR /app
-COPY .env /app/.env
+COPY . /app/.env
 
 RUN cat /app/.env
