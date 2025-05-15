@@ -11,8 +11,8 @@ jobs:
       ENVIRONMENT: production
       TAG: dev-1
     secrets:
-      DOCKER_USERNAME: ${{ secrets.ORG_SEC_DOCKER_USERNAME }} 
-      DOCKER_TOKEN: ${{ secrets.ORG_SEC_DOCKER_TOKEN }}
+      DOCKER_USERNAME: ${{ secrets.SEC_DOCKER_USERNAME }} 
+      DOCKER_TOKEN: ${{ secrets.SEC_DOCKER_TOKEN }}
    
 
     
