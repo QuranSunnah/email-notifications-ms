@@ -7,8 +7,6 @@ on:
 
 jobs:
   build:
-    name: Docker Image Build Process
-    environment: development
     uses: QuranSunnah/deployment-tools/.github/workflows/development.yaml@main
     with:
       ENVIRONMENT: developmen
