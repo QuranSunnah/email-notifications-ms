@@ -9,10 +9,10 @@ jobs:
   build:
     uses: QuranSunnah/deployment-tools/.github/workflows/development.yaml@main
     with:
-      ENVIRONMENT: developmen
+      ENVIRONMENT: development
       TAG: ${{ github.sha }}
     secrets:
-      HOST: ${{ secrets.HOST }}
+      HOST: 127.0.0.1
       USERNAME: ${{ secrets.USERNAME }}
    
 
