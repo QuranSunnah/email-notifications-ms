@@ -11,7 +11,7 @@ jobs:
     environment: development
     uses: QuranSunnah/deployment-tools/.github/workflows/development.yaml@main
     with:
-      ENVIRONMENT: development
+      ENVIRONMENT: developmen
       TAG: ${{ github.sha }}
     secrets:
       HOST: ${{ secrets.HOST }}
