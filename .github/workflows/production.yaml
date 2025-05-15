@@ -1,0 +1,19 @@
+name: Development Environment Deploy Process
+
+on:
+  push:
+    branches:
+      - production
+jobs:
+  build:
+    uses: QuranSunnah/deployment-tools/.github/workflows/development.yaml@main
+    with:
+      ENVIRONMENT: production
+      TAG: dev-1
+    secrets:
+      HOST: stage-1
+      USERNAME: staging
+   
+
+    
+    
