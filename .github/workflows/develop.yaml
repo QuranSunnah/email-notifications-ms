@@ -1,0 +1,22 @@
+name: Development Environment Deploy Process
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Docker Image Build Process
+    environment: development
+    uses: QuranSunnah/deployment-tools/workflows/build/development.yaml
+    with:
+      ENVIRONMENT: development
+      TAG: ${{ github.sha }}
+    secrets:
+      HOST: ${{ secrets.HOST }}
+      USERNAME: ${{ secrets.USERNAME }}
+   
+
+    
+    
